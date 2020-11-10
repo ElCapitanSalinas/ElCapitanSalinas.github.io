@@ -1,0 +1,127 @@
+#myFooterRosman {
+    background-color: #060A1E;
+    color: white;
+    padding-top: 30px;
+}
+
+#myFooterRosman .footer-copyright-Rosman {
+    background-color: #060A1E;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooterRosman .row-Rosman {
+    margin-bottom: 60px;
+}
+
+#myFooterRosman .navbar-brand-Rosman {
+    margin-top: 45px;
+    height: 65px;
+}
+
+#myFooterRosman .footer-copyright-Rosman p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooterRosman .Rosman ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooterRosman .Rosman h5 {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooterRosman .Rosman h2 a {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooterRosman .Rosman a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooterRosman .Rosman a:hover, #myFooterRosman .Rosman a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooterRosman .social-networks-Rosman {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#myFooterRosman .social-networks-Rosman a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooterRosman .social-networks-Rosman a:hover {
+    text-decoration: none;
+}
+
+#myFooterRosman .facebook-Rosman:hover {
+    color: #0077e2;
+}
+
+#myFooterRosman .google-Rosman:hover {
+    color: #ef1a1a;
+}
+
+#myFooterRosman .twitter-Rosman:hover {
+    color: #00aced;
+}
+
+#myFooterRosman .btn-Rosman {
+    color: white;
+    background-color: #68687b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooterRosman .Rosman {
+        text-align: center;
+    }
+}
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+html .Rosman {
+    height: 100%;
+}
+
+body .Rosman {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content-Rosman {
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    min-height: 200px;
+}
+
+#myFooterRosman .Rosman {
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+}
