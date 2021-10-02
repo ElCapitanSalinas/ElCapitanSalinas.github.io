@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;700&display=swap');
+
+body {
+    /* overflow: hidden; */
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .container-left {
+        width: 100%;
+    }
+  }
+
+.container-left {
+    position: absolute;
+    margin-left: 15%;
+    width: 50%;
+    height: 100%;
+    font-weight: 700;
+    /* background-color: aqua; */
+    font-family: 'Spartan', sans-serif;
+}
+
+.content > img {
+    position: absolute;
+    width: 30%;
+    left: 25%;
+    transform: translate(-50%, 0);    
+}
+
+@keyframes show {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    } 
+}
+
+@keyframes hide {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    } 
+}
+
+.content {
+    /* position: absolute; */
+    /* left: 50%; */
+    opacity: 100%;
+    animation-name: show;
+    height: max-content;
+    animation-duration: 8s;
+}
+
+#title {
+    font-size: 750%;
+    margin-top: 25%;
+    margin-left: -15%
+}
+
+.btns {
+    position: absolute;
+    /* background-color: blue; */
+    width: 60%;
+    height: 5%;
+    top: 70%;
+    transform: translate(-50%, 0);
+    left: 25%;
+    /* display: flex; */
+}
+
+.button {
+    border: solid;
+    border-color: #ffdc00;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: rgb(2, 2, 2);
+    font-family: 'Spartan', sans-serif;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: #ffdc00;
+    color: #ffffff;
+    transform: scale(1.2);
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.316);
+}
+
+.buttonss {
+    left: 25%;
+    /* padding: 10px; */
+    margin-left: 60px;
+}
+
+.tagline {
+    position: absolute;
+    font-weight: 200;
+    font-size: 150%;
+    letter-spacing: 3px;
+    transform: translate(-50%, 0);
+    left: 25%;
+    top: 90%;
+}
+
+@keyframes move {
+    from {
+        display: block;
+        top:125%;
+    }
+    to {
+        display: block;
+        top:-220%;
+    } 
+}
+
+
+.transition {
+    display: block;
+    position: absolute;
+    top: -220%;
+    width: 100%;
+    height: 220%;
+    background-image: url('/img/transition.png');
+    /* animation-name: move; */
+    animation-duration: 2.5s;
+    overflow: hidden;
+}
