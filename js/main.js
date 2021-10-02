@@ -1,8 +1,8 @@
 $(document).ready(function(){
     $( ".buttonss" ).click(function() {
         var button = $(this).attr("data-info")
-        $('.transition').css({"animation-name": "move" });
-        $('.content').css({"animation-name": "hide", "animation-duration": "1s", "opacity": "0%" });
+        $(".container-transition").show();
+        $(".container-transition").animate({top: '-200%'}, 1500);
         setTimeout(redirect(button), 1500);
     });
 

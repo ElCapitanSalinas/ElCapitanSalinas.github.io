@@ -16,8 +16,9 @@ body {
 
 .container-left {
     position: absolute;
-    margin-left: 15%;
-    width: 50%;
+    /* margin-left: 15%; */
+    /* opacity: 0.1; */
+    width: 40%;
     height: 100%;
     font-weight: 700;
     /* background-color: aqua; */
@@ -26,8 +27,9 @@ body {
 
 .content > img {
     position: absolute;
+    margin-top: 40px;
     width: 30%;
-    left: 25%;
+    left: 50%;
     transform: translate(-50%, 0);    
 }
 
@@ -59,20 +61,23 @@ body {
 }
 
 #title {
-    font-size: 750%;
-    margin-top: 25%;
-    margin-left: -15%
+    transform: translate(-50%, 0);
+    text-align: center;
+    width: 100%;
+    font-size: 100px;
+    margin-top: 30%;
+    margin-left: 50%;
 }
 
 .btns {
     position: absolute;
     /* background-color: blue; */
-    width: 60%;
+    width: 50%;
     height: 5%;
-    top: 70%;
+    top: 65%;
     transform: translate(-50%, 0);
-    left: 25%;
-    /* display: flex; */
+    left: 50%;
+    display: flex;
 }
 
 .button {
@@ -101,9 +106,11 @@ body {
 }
 
 .buttonss {
-    left: 25%;
+    /* left: 25%; */
     /* padding: 10px; */
-    margin-left: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 40%;
 }
 
 .tagline {
@@ -112,7 +119,7 @@ body {
     font-size: 150%;
     letter-spacing: 3px;
     transform: translate(-50%, 0);
-    left: 25%;
+    left: 50%;
     top: 90%;
 }
 
@@ -127,15 +134,23 @@ body {
     } 
 }
 
-
-.transition {
-    display: block;
+.container-transition {
+    display: none;
     position: absolute;
-    top: -220%;
+    top: 100%;
     width: 100%;
-    height: 220%;
-    background-image: url('/img/transition.png');
+    height: 300%;
+    left: 0%;  
     /* animation-name: move; */
     animation-duration: 2.5s;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+
+.transition {
+    /* position: absolute; */
+    margin-top: -1%;
+    width: 100%;
+    height: 70%;
+    background-color: #113859;
 }
