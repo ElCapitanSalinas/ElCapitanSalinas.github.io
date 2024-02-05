@@ -7,6 +7,7 @@
 
 * {
     overflow-x: hidden;
+    /* overflow-y: hidden; */
     box-sizing: border-box;
   }
 
@@ -14,12 +15,14 @@ body {
     background-color: #021327;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    width: 100%;
     margin-left: 0px;
     margin-right: 0px;
+    cursor: default;
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 440px) {
 
 
     /* Barra de navegación en MOBILE */
@@ -100,6 +103,8 @@ body {
         font-size: 48px;
         font-weight: 800;
         text-align: center;
+        
+        
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -416,7 +421,7 @@ body {
         color: white;
         padding: 1.5vw 2.5vh;
         border-radius: 10px;
-        margin-top: 44vh;
+        margin-top: 47vh;
         left:40%;
         transition: 0.4s;
     }
@@ -482,5 +487,564 @@ body {
         text-align: center;
         margin-top: 2vh;
         margin-bottom: -3vh;
+    }
+}
+
+@media only screen and (min-device-width: 1020px) and (max-device-width: 2000px) {
+
+    body {
+        width: 100%;
+    }
+
+    /* Barra de navegación en WEB */
+    .navbar {
+        
+        position: absolute;
+        margin: auto;
+        /* background-color: #021327; */
+        /* margin-left: -8px; */
+        margin-top: -10px;
+        height: 15vh;
+        width: 100vw;
+        display: flex;
+        top: 0vh;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    .logo > img {
+        margin-left: 20vh;
+        position: absolute;
+        margin-top: 8.5vh;
+        width: 10%;
+        transform: translate(0, -50%);
+    }
+    .toggle {
+        /* background-color: blue; */
+        display: none;
+        width: 8%;
+        height: 30%;
+        margin-right: 5vh;
+        margin-top: 17%;
+    }
+
+    .toggle > svg {
+        width: 100%;
+        fill: #FFF;
+    }
+
+    .navbar-content {
+        position: absolute;
+        /* background-color: #010c18; */
+        display: flex;
+        right: 0vh;
+        padding: 2vh 0vh;
+        overflow: hidden;
+        flex-direction: row;
+        width: 70vw;
+        /* top: 16vh; EJECUTADO */
+        top: 5vh;
+        z-index: 5;
+        /* margin-left: 5vw; */
+        /* display: none; */
+    }
+
+    .navbar-item {
+        text-align: center;
+        padding: .5vw 2vw;
+        color: white;
+        /* border-bottom: 1.5px solid rgba(255, 255, 255, 0.2); */
+        font-weight: 600;
+        transition: 0.4s;
+    }
+
+    .navbar-item:hover, .navbar-item:active {
+        opacity: 0.5;
+        cursor: pointer;
+        /* background-color: #021327; */
+    }
+
+    .client {
+
+        background: rgb(252,74,26);
+        background: linear-gradient(90deg, rgba(252,74,26,1) 0%, rgba(247,183,51,1) 100%);
+        border-bottom: none;
+        border-radius: 10px;
+    }
+
+    /* BODY */
+
+    .title-hihost {
+        /* position: relative; */
+        margin-left: 17.5%;
+        width: 50%;
+        color: #FFF;
+        font-size: 70px;
+        font-weight: 800;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 30vh;
+    }
+
+    .world-curve-title-mobile {
+        display: none;
+    }
+
+    .world-curve-title-mobile > svg {
+        position: absolute;
+        top: 37.5vh;
+        left: 12.5%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .world-curve-title {
+        display: block !important;
+    }
+    
+    .world-curve-title > svg {
+        position: absolute;
+        top: 35.5vh;
+        left: 9%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .caption-title-hihost {
+        width: 39%;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 1.5vh;
+        opacity: 0.5;
+    }
+
+    /* Let's Start Button */
+
+    .letstart-btn {
+        position: absolute;
+        background: rgb(252,74,26);
+        background: linear-gradient(90deg, rgba(252,74,26,1) 0%, rgba(247,183,51,1) 100%);
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        padding: .5vw 4vh;
+        border-radius: 10px;
+        margin-top: 6vh;
+        left:45%;
+        transition: 0.4s;
+        cursor: default;
+    }
+
+    .letstart-btn:hover {
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
+    }
+
+    .client:hover {
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
+    }
+
+    .scrolldownicon {
+        /* background-color: blue; */
+        display: block;
+        width: 80%;
+        /* height: 30%; */
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 20vh;
+    }
+
+    .scrolldownicon > svg {
+        width: 100%;
+        /* border:1px solid black */
+    }
+
+    .scroll-down {
+        width: 100%;
+        color: #FFF;
+        font-size: 10px;
+        font-weight: 800;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 1vh;
+        opacity: 0.5;
+    }
+
+    .graph-chart {
+        display: none !important;
+        margin-top: 2vh;
+        margin-left: -10vw;
+    }
+
+    #phoneChart {
+        display: none;
+    }
+
+    .graph-chart-desktop {
+        display: block !important;
+        margin-top: 5vh;
+        /* margin-left: -10vw; */
+    }
+
+    /* Moon and beyond */
+    .title-caption-moon {
+        width: 80%;
+        color: #FFF;
+        font-size: 41px;
+        font-weight: 800;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 0vh;
+    }
+
+    .moon-boxes-container {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+
+        margin-top: 5%;
+        margin-left: 20%;
+        height: 15vh;
+        justify-content: space-evenly;
+    }
+    
+    .moon-item {
+        /* display: flex; */
+        margin-bottom: 20vh;
+        width: 25%;
+        justify-content: space-between;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .moon-icon {
+        position: absolute;
+        margin-top: 2.5vh;
+        margin-left: -2.5vh;
+    }
+
+    .moon-card {
+        width: 15vw;
+        height: 10vh;
+        border-radius: 16px;
+        background-color: #102135;
+    }
+    
+    .moon-card-title {
+        font-size: 12px;
+        color: #FFF;
+        font-weight: 700;
+        margin-left: 3vh;
+        margin-top: 1.5vh;
+    }
+    .moon-card-caption {
+        width: 80%;
+        font-size: 10.5px;
+        color: #FFF;
+        font-weight: 700;
+        margin-left: 3vh;
+        margin-top: .5vh;
+        opacity: 0.7;
+    }
+
+    .spacer {
+        height: 10vh;
+    }
+
+    .curve-1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: none;
+    }
+
+    .curve-1-desktop {
+        display: block !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+
+    /* More about DDoS Section */
+
+    .title-caption-ddos {
+        width: 35%;
+        color: #FFF;
+        font-size: 41px;
+        font-weight: 800;
+        text-align: left;
+        margin-left: 21vw;
+        margin-top: 15vh;
+    }
+
+    .advice-caption-ddos {
+        width: 63%;
+        color: var(--yellow);
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        margin-left: 21vw;
+        margin-top: 1vh;
+    }
+    
+    .second-caption-ddos {
+        width: 35%;
+        text-align: justify;
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 0.5;
+        margin-left: 21vw;
+        margin-top: 1vh;
+    }
+
+    .box-checkmarks-ddos {
+        width: 35%;
+        justify-content:space-between;
+        margin-top: 5vh;
+        margin-left: 21vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+
+    .checkmark-item {
+        display: flex;
+        flex-direction: row;
+        margin-top: 4vh;
+    }
+
+    .checkmark-svg {
+
+    }
+
+    .checkmark-text {
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+        margin-left: 1vh;
+    }
+
+    .btn2 {
+        margin-top: 12vh;
+        margin-left: -24vw !important;
+    }
+
+    .astronaut-desktop {
+        display: block !important;
+        right: 4vw;
+        margin-top: -40vh;
+        width: 28.1vw;
+        height: 28.1vw;
+        opacity: 0.5;
+        /* background-color: blue; */
+        background-image: url(./assets/Astronaut.png);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+    }
+
+    .spacer-2 {
+        margin-top: 19vh;
+        height: 10vh;
+        /* background-color: blue; */
+    }
+
+
+    .title-servers {
+        width: 100%;
+        color: #FFF;
+        font-size: 45px;
+        font-weight: 800;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .servers-container-mobile {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        /* overflow-x: auto; */
+        width: 70%;
+        /* margin-left: -50%; */
+        justify-content: space-around;
+        margin-top: -40vh;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .servers-card-left {
+        height: 43.3vh;
+        width: 15.5vw;
+        background-color: #102135;
+        border-radius: 16px;
+        margin-top: 7vh;
+    }
+
+    .servers-card-center {
+        height: 49.6vh;
+        width: 17.8vw;
+        background-color: #102135;
+        border-radius: 16px;
+        margin-top: 4.5vh;
+    }
+
+    .servers-card-right {
+        height: 43.3vh;
+        width: 15.5vw;
+        background-color: #102135;
+        border-radius: 16px;
+        margin-top: 7vh;
+        /* margin-right: -60vw; */
+        /* right: 0; */
+    }
+
+    .center-svg > svg {
+        width: 100%;
+        align-content: center;
+        margin-top: 3vh;
+    }
+
+    .card-server-title {
+        width: 100%;
+        text-align: center;
+        font-weight: 800;
+        font-size: 19px;
+        color: #FFF;
+        margin-top: 2vh;
+    }
+
+    .card-server-description {
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        color: #FFF;
+        margin-top: 1vh;
+        /* margin-left: 3.5vh; */
+    }
+
+    .card-server-feature-list {
+        width: 100%;
+        text-align: left;
+        font-weight: 400;
+        font-size: 12px;
+        color: #FFF;
+        margin-top: 1vh;
+        margin-left: 0vh;
+    }
+
+    .more-btn {
+        position: absolute;
+        background: rgb(252,74,26);
+        background: linear-gradient(90deg, rgba(252,74,26,1) 0%, rgba(247,183,51,1) 100%);
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        padding: .5vw 3vh;
+        border-radius: 10px;
+        margin-top: 52vh;
+        left:50%;
+        transform: translate(-50%, 0);
+        transition: 0.4s;
+    }
+
+    .more-btn:hover {
+        opacity: 0.1;
+    } 
+
+    .more-btn:active {
+        opacity: 0.1;
+    }
+
+    .letstart-btn:active {
+        opacity: 0.1;
+    }
+
+    .spacer-3 {
+        margin-top: 80vh;
+        width: 100%;
+        /* height: 10vh; */
+    }
+    
+    .footer-page {
+        height: 30vh;
+        width: 100vw;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-left: 2vh;
+        justify-content: space-between;
+    }
+
+    .footer-logo > img{
+        position: absolute;
+        width: 14%;
+        margin-top: 3%;   
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .footer-text {
+        display: flex;
+        margin-top: 5vh;
+        flex-direction: column;
+    }
+
+    .text-item {
+        font-weight: 800;
+        margin-top: 1.5vh;
+        color: white;
+        text-align: right;
+    }
+
+    .text-item:active {
+
+        color: grey;
+    }
+
+
+    .footer-copyright {
+        font-size: 12px;
+        color: #fff;
+        width: 100%;
+        opacity: 0.5;
+        font-weight: 800;
+        text-align: center;
+        margin-top: 2vh;
+        margin-bottom: -3vh;
+    }
+
+    .moon-desktop {
+        margin-top: 65vh !important;
     }
 }

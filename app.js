@@ -22,43 +22,47 @@ $(document).ready(function () {
     
     });
 
-    $('.hidden-right').click(function (e) { 
-        e.preventDefault();
-        $( ".servers-card-right" ).animate({marginRight: '20%', height: '41vh' , width: '57vw', marginTop:'4.5vh'}, 500, function() {
-            // $(this).addClass('servers-card-center');
-            $('.servers-card-center').addClass('hidden-center');
-        })
+    console.log($(window).width())
+    if ($(window).width() < 1090){
+        $('.hidden-right').click(function (e) { 
+            e.preventDefault();
+            $( ".servers-card-right" ).animate({marginRight: '20%', height: '41vh' , width: '57vw', marginTop:'4.5vh'}, 500, function() {
+                // $(this).addClass('servers-card-center');
+                $('.servers-card-center').addClass('hidden-center');
+            })
+            
+            $( ".servers-card-center" ).animate({height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {
+            });
         
-        $( ".servers-card-center" ).animate({height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {
+            $( ".servers-card-left" ).animate({marginLeft: '-150%', height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {
+            }); 
         });
     
-        $( ".servers-card-left" ).animate({marginLeft: '-150%', height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {
-        }); 
-    });
-
-    $('.hidden-left').click(function (e) { 
-        e.preventDefault();
-        $( ".servers-card-left" ).animate({marginLeft: '20%', height: '41vh' , width: '57vw', marginTop:'4.5vh'}, 500, function() {
-            // $(this).addClass('servers-card-center');
-            $('.servers-card-center').addClass('hidden-center');
-        })
+        $('.hidden-left').click(function (e) { 
+            e.preventDefault();
+            $( ".servers-card-left" ).animate({marginLeft: '20%', height: '41vh' , width: '57vw', marginTop:'4.5vh'}, 500, function() {
+                // $(this).addClass('servers-card-center');
+                $('.servers-card-center').addClass('hidden-center');
+            })
+            
+            $( ".servers-card-center" ).animate({height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {
+            });
         
-        $( ".servers-card-center" ).animate({height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {
+            $( ".servers-card-right" ).animate({marginRight: '-150%', height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {
+            }); 
         });
     
-        $( ".servers-card-right" ).animate({marginRight: '-150%', height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {
-        }); 
-    });
-
-    $('#center').click(function (e) { 
-        e.preventDefault();
-        $( ".servers-card-right" ).animate({marginRight: '-60vw', height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {})
+        $('#center').click(function (e) { 
+            e.preventDefault();
+            $( ".servers-card-right" ).animate({marginRight: '-60vw', height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {})
+            
+            $( ".servers-card-center" ).animate({height: '41vh' , width: '57vw', marginTop:'4.5vh'}, 500, function() {});
         
-        $( ".servers-card-center" ).animate({height: '41vh' , width: '57vw', marginTop:'4.5vh'}, 500, function() {});
+            $( ".servers-card-left" ).animate({marginLeft: '-60vw', height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {}); 
+        });
+       
+        // height: 41vh;width: 57vw;
+    }
     
-        $( ".servers-card-left" ).animate({marginLeft: '-60vw', height: '50vh' , width: '69vw', marginTop:'0vh'}, 500, function() {}); 
-    });
-   
-    // height: 41vh;width: 57vw;
     
 });
