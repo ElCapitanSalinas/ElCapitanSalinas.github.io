@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --yellow: rgb(247,183,51);
+    --orange: rgb(252,74,26)
+  }
+
+* {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #021327;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    cursor: default;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+@media only screen and (max-width: 440px) {
+    .title-404 {
+        font-size: 100px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-weight: 800;
+
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 80%;
+    }
+    .title-404-caption {
+        font-size: 13px;
+        width: 80%;
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        
+    }
+
+    .home-btn {
+        position: absolute;
+        background: rgb(252,74,26);
+        background: linear-gradient(90deg, rgba(252,74,26,1) 0%, rgba(247,183,51,1) 100%);
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        padding: 2.5vw 5vh;
+        border-radius: 10px;
+        margin-top: 6vh;
+        left:33%;
+        transition: 0.4s;
+    }
+
+    .home-btn:hover {
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
+    }
+
+    .home-btn:active {
+        opacity: 0.1;
+    }
+}
+
+@media only screen and (min-device-width: 1020px) and (max-device-width: 2000px) {
+    .title-404 {
+        font-size: 100px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-weight: 800;
+
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 20%;
+    }
+    .title-404-caption {
+        font-size: 13px;
+        width: 80%;
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        
+    }
+
+    .home-btn {
+        position: absolute;
+        background: rgb(252,74,26);
+        background: linear-gradient(90deg, rgba(252,74,26,1) 0%, rgba(247,183,51,1) 100%);
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        padding: .5vw 4vh;
+        border-radius: 10px;
+        margin-top: 6vh;
+        left:46%;
+        transition: 0.4s;
+        cursor: default;
+    }
+
+    .home-btn:hover {
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
+    }
+
+    .home-btn:active {
+        opacity: 0.1;
+    }
+}
