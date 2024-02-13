@@ -27,8 +27,10 @@ body {
 }
 
 a {
-    color: inherit !important; /* blue colors for links too */
+    color: #fff !important; /* blue colors for links too */
     text-decoration: inherit !important; /* no underline */
+    text-decoration: none !important;
+
 }
 
 
