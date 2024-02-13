@@ -36,7 +36,12 @@ a {
 
 @media only screen and (max-width: 440px) {
 
-
+    a {
+        color: #fff !important; /* blue colors for links too */
+        text-decoration: inherit !important; /* no underline */
+        text-decoration: none !important;
+    
+    }
     /* Barra de navegación en MOBILE */
     .navbar {
         
@@ -506,6 +511,13 @@ a {
 
     body {
         width: 100%;
+    }
+
+    a {
+        color: #fff !important; /* blue colors for links too */
+        text-decoration: inherit !important; /* no underline */
+        text-decoration: none !important;
+    
     }
 
     /* Barra de navegación en WEB */
