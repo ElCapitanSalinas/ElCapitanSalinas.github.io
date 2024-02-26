@@ -1,6 +1,6 @@
 <?php
 class reliableSiteAPI{
-    private $apiToken = '';
+    private $apiToken = 'fa929f28-3925-47b3-8f10-5adb2c282e6f';
     
     private $apiUrl = 'https://dedicated-servers.reliablesite.dev/v2/';
     
