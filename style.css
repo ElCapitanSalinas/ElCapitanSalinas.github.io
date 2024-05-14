@@ -1072,3 +1072,54 @@ a {
         margin-top: 65vh !important;
     }
 }
+
+
+.about-container {
+    position: absolute;
+    margin-top: 50%;
+    /* background-color: blue; */
+    width: 60%;
+    height: 55%;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.container-item {
+    width: 50%;
+    
+    /* padding: 10% 10%; */
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-item img {
+    height: 50vh;
+}
+
+.about-title {
+    font-size: 35px;
+    font-weight: 800;
+    color: white;
+    text-align: right;
+    /* background-color: blue; */
+}
+
+.about-caption {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    margin-top: 2vh; 
+    line-height: 2.5vh;
+    width: 90%;
+    margin-left: 10%;
+    /* background-color: blue; */
+}
