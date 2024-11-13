@@ -1,0 +1,592 @@
+/*
+  Good Luck!
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:wght@300..900&display=swap');
+
+* {
+   --green-hvac: #0A6579;
+   --green-hvac-dark: #064250;
+   --yellow-hvac: #F99E15;
+   --yellow-hvac-dark: #c07b15;
+   --gray-hvac: #484848;
+   --redHat: "Red Hat Display", serif !important;
+   --albertsans: "Albert Sans", sans-serif !important;
+   --darkwhite: #F5F5F5;
+}
+
+body { /* The hero image sometimes overflows from x */
+  overflow-x: hidden !important;
+}
+
+div { /* Stop showing the selecting cursor */
+  cursor: default;
+}
+/* remove A styling */
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+/* Fonts declaration */
+
+.title {
+  font-family: "Red Hat Display", serif !important;
+  font-weight: 700 !important; 
+}
+
+.regular {
+  font-family: "Albert Sans", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* Size for the top navbar */
+
+.navbar-content {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 700 !important; 
+  color: #fff !important;
+  font-size: 1rem !important;
+}
+
+
+/* Style for Buttons on the first navbar */
+
+.cont-btns-nav .btn:active {
+  transform: scale(1.2, 1.2);
+  background-color: var(--green-hvac-dark);
+}
+
+/* Emergency Button */
+.btn-alert {
+  background-color: var(--yellow-hvac) !important;
+  color: #111;
+  transform: 0.3s;
+}
+
+
+/* Anim for the alert button (Scale and colour */
+.btn-alert:active {
+  transform: scale(1.2, 1.2);
+  background-color: var(--yellow-hvac-dark) !important;
+}
+
+/* Centered icons for all the buttons */
+.cont-btns-nav .btn span {
+  line-height: 4vh !important;
+}
+
+/* Expansible Navbar */
+.navbar-content {
+  background-color: var(--green-hvac);
+}
+
+/* Menu Text when the navbar is collapsed */
+.navbar-brand {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Re-style for the button of the toggler */
+.navbar-toggler, .navbar-toggler:active, .navbar-toggler:focus {
+  border: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+/* Animation when the toggler button is pressed */
+.navbar-toggler:focus .icon-burger{
+  transition: 0.4s;
+  transform: rotate(90deg);
+}
+
+/* Return to the main position when the burger is not active */
+.navbar-toggler:not(:focus) .icon-burger {
+  transform: rotate(0deg);
+}
+
+.icon-burger {
+  color: white;
+  font-size: 1.5rem;
+  transition: 0.4s;
+}
+
+.nav-item, .nav-link {
+  color: #fff !important;
+}
+
+/* Button on Hero */
+.specialist-cta { 
+  font-family: var(--redHat) !important;
+  font-weight: 700 !important;
+  text-align: center;
+  text-wrap: nowrap;
+  font-size: 1.3rem;
+  padding: .76vh 3vh;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Hero Btn anim */
+.specialist-cta:active, .specialist-cta:hover {
+  border: none;
+  transform: scale(1.2, 1.2);
+}
+
+/* Bottom Right Bubble Animation */
+.chat-bubble { 
+transition: 0.4s;
+}
+
+.chat-bubble:hover, .chat-bubble:active {
+  transform: translate(0%, -20%);
+}
+
+/* Style for Branch Selector button */
+
+.btn-branch {
+  background-color: var(--darkwhite);
+  font-size: .7rem; 
+  color: #111;
+  /* width: fit-content; */
+  text-wrap: wrap;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.btn-branch:active, .btn-branch:hover, .btn-alert:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* Selected button for Branch Locator */
+.selected { 
+font-weight: 700 !important; 
+color: #fff;
+background-color: var(--green-hvac) !important; 
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+border: none;
+background-color: var(--green-hvac);
+font-family: "Albert Sans", sans-serif !important;
+font-weight: 700 !important;
+color: white !important;
+border-radius: 0px;
+font-size: 1rem;
+animation: fadeIn .4s; 
+}
+
+/* Fade in animation for the dropdown menus */
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+/* Style for dropdown menu items */
+.dropdown-item {
+display: block;
+width: 100%;
+padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+clear: both;
+font-weight: 700;
+color: #fff !important;
+text-align: inherit;
+text-decoration: none;
+white-space: nowrap;
+background-color: transparent;
+border: none;
+border-radius: 0px;
+}
+
+/* Banner-Hero Mobile */
+
+@media (max-width: 767.98px) {  /* Phone settings */
+
+  .cont-btns-nav .btn { /* Top buttons on mobile */
+    background-color: var(--green-hvac);
+    width: 4vh;
+    height: 4vh;
+    line-height: 4vh !important;
+    padding:0vh 1vw;
+    text-align: center;
+    border-radius: 0px;
+    border: var(--green-hvac);
+    transition: 0.3s;
+}
+
+
+  .hero-banner {  /* Container */
+    height: 81vh;
+    background-size: cover;
+    overflow: hidden;
+    /* margin-left: -1.3vh; */
+  }
+  .hero-banner-bg { /* BG Container */
+    position: absolute;
+    width: 100.3%;
+    height: 81vh;
+    overflow: hidden;
+    z-index: -2;
+  }
+  .hero-banner-bg > img { /* Image tilted 1.64dg */
+    height: 95vh;
+    transform: rotate(1.64deg);
+    transform: translate(-40%, -4%);
+    margin-left: -15%;
+  }
+
+  .hero-banner-darkness { /* BG Darkness (Multiply) */
+    position: absolute;
+    width: 100.3%;
+    height: 81vh;
+    mix-blend-mode: multiply;
+    background-color: var(--gray-hvac);
+    opacity: 0.9;
+    z-index: -1;
+  }
+
+  .hero-content { /* Text and Buttons for Hero */
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+  }
+
+  .hero-opening-caption { /* Top Text */
+    margin-top: 14vh;
+  }
+
+  .bulletlist .p-2 { /* Bulletlist properties */
+
+    font-family: var(--albertsans);
+    font-weight: 700 !important;
+    font-size: .9rem;
+    color: white;
+    text-align: left;
+  }
+
+  .bulletlist .p-2 > span { /* Icons from bulletlist size and alignment */
+    color: var(--yellow-hvac);
+    font-size: 1.8rem;
+    transform: translate(0, 50%);
+    line-height: 1rem;
+  }
+
+  .flex-sm-column-reverse{ /* Responsive Branch Locator */
+    display:flex;
+    flex-direction:column-reverse;
+  }
+
+  /* Branch Selector Map Height */
+
+  .branch-map {
+    height: 22.5vh;
+  }
+
+
+  /* Image on the about us section */
+  .about-us-img { 
+    width: 100% !important; /* Size of the about us img to fill the screen as well */
+  }
+
+
+  /* Bubble to contain icons on navbar and footer */
+  .bubble {
+    width: 4.5vh; 
+    height: 4.5vh;
+    margin-left: auto; 
+    margin-right: auto;
+    border: 3px black solid; 
+    border-radius: 50%;
+    line-height: 4.5vh;
+    margin-top: .1vh;
+  }
+
+  /* Text size on the bubble for navbar and footer */
+  .bubble > span {
+    font-size: 2.5vh !important;
+    line-height: 4.1vh !important;
+  }
+}
+
+@media (min-width: 768px) { 
+  .cont-btns-nav .btn { /* Top button on desktop */
+    font-family: "Red Hat Display", serif !important;
+    background-color: var(--green-hvac);
+    /* line-height: 3.5vh !important; */
+    padding:1vh 1.5vw;
+    font-weight: 700;
+    text-wrap: nowrap;
+    font-size: 1.4vw !important;
+    text-align: center;
+    border-radius: 0px;
+    font-size: .8rem;
+    border: var(--green-hvac);
+    transition: 0.3s;
+  }
+  
+  
+  /* Bubble for navbar and footer */
+  .bubble {
+    width: 4.5vh; 
+    height: 4.5vh;
+    margin-left: auto; 
+    margin-right: auto;
+    border: 3px black solid; 
+    border-radius: 50%;
+    line-height: 4.5vh;
+    margin-top: .1vh;
+  }
+
+  /* Icon size and position for the prev bubble */
+  .bubble > span {
+    font-size: 2.5vh !important;
+    line-height: 4.1vh !important;
+  }
+  
+  /* Transform the text for the emergency Service button */
+
+  .btn-emergency {
+    text-transform: uppercase !important;
+  }
+
+  .hero-banner {  /* Container */
+    height: 81vh;
+    background-size: cover;
+    overflow: hidden;
+    /* margin-left: -1.3vh; */
+  }
+  .hero-banner-bg { /* BG Container */
+    position: absolute;
+    width: 100.3%;
+    height: 81vh;
+    overflow: hidden;
+    z-index: -2;
+  }
+  .hero-banner-bg > img { /* Image tilted 1.64dg */
+    height: 95vh;
+    transform: rotate(1.64deg);
+    transform: translate(-50%, -4%);
+    margin-left: 50%;
+  }
+
+  .hero-banner-darkness { /* BG Darkness (Multiply) */
+    position: absolute;
+    width: 100.3%;
+    height: 81vh;
+    mix-blend-mode: multiply;
+    background-color: var(--gray-hvac);
+    opacity: 0.9;
+    z-index: -1;
+  }
+
+  .hero-content { /* Text and Buttons for Hero */
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+  }
+
+  .hero-opening-caption { /* Top Text */
+    margin-top: 14vh;
+  }
+
+  .bulletlist .p-2 { /* Bulletlist properties */
+
+    font-family: var(--albertsans);
+    font-weight: 700 !important;
+    font-size: .9rem;
+    color: white;
+    text-align: left;
+  }
+
+  .bulletlist .p-2 > span { /* Icons from bulletlist size and alignment */
+    color: var(--yellow-hvac);
+    font-size: 1.8rem;
+    transform: translate(0, 50%);
+    line-height: 1rem;
+  }
+
+  .flex-sm-column-reverse{ /* Responsive Branch Locator */
+    display:flex;
+    flex-direction:column-reverse;
+  }
+
+  /* Branch map height */
+  .branch-map {
+    height: 30vh;
+  }
+
+
+  /* About us image size */
+  .about-us-img { 
+    width: 140% !important; /* Size of the about us img to fill the text */
+  }
+
+  /* Resize of text on desktop view */
+  .text-number {
+    font-size: 1.5vw !important;
+  }
+}
+
+@media (min-width: 992px) { 
+
+  /* Resize of the text for desktop views */
+  .fs-text-5 {
+    font-size: 1.7rem !important;
+  }
+
+  .fs-text-2 {
+    font-size: 2.3rem !important;
+  }
+  
+  .fs-7 {
+      font-size: 1.1rem;
+      /* width: 70%; */
+  }
+  
+  .fs-text-7 {
+    font-size: 1rem;
+  }
+    /* Spacer in the promotion section */
+  .sp {
+    width: 45% !important;
+  }
+
+
+  .cont-btns-nav .btn { /* Top button on desktop */
+    font-family: "Red Hat Display", serif !important;
+    background-color: var(--green-hvac);
+    /* line-height: 3.5vh !important; */
+    padding:1vh 1.5vw;
+    font-weight: 700;
+    text-wrap: nowrap;
+    font-size: .9rem !important;
+    text-align: center;
+    border-radius: 0px;
+    font-size: .8rem;
+    border: var(--green-hvac);
+    transition: 0.3s;
+    margin-top: -.5vh;
+  }
+
+  /* Gap in navigation buttons */
+  .gap-lg-6 {
+    gap: 4vw !important;
+  }
+
+  /* Opening caption spacing on top */
+  .hero-opening-caption { /* Top Text */
+    margin-top: 10vh;
+  }
+
+  /* Size of captions for desktop */
+  .title-caption-desktop {
+    font-size: 1.5rem !important;
+    font-weight: 300 !important;
+  }
+
+  .title-caption {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 7vh !important;
+    font-size: 3.7rem !important;
+  }
+
+  
+  .hero-banner {  /* Container */
+    height: 78vh;
+    background-size: cover;
+    overflow: hidden;
+    margin-left: 0vh;
+  }
+
+  .hero-banner-bg { /* BG Container */
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    /* background-image: url(); */
+    overflow: hidden;
+    z-index: -2;
+  }
+  
+  .hero-banner-bg > img { /* Image tilted 1.64dg */
+    width: auto;
+    height: 100vh !important;
+    transform: rotate(1.64deg);
+    transform: translate(-50%, -5%);
+    margin-left: 50%;
+  }
+
+  .hero-banner-darkness { /* BG Darkness (Multiply) */
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    mix-blend-mode: multiply;
+    background-color: var(--gray-hvac);
+    opacity: 0.9;
+    z-index: -1;
+  }
+
+  .hero-content { /* Text and Buttons for Hero */
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+  }
+
+  .contained {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+  #about-us {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+  .bullet-item {
+    font-size: 1.4rem !important;
+  }
+
+    
+  .specialist-cta { /* Button on Hero */
+    font-family: var(--redHat) !important;
+    font-weight: 700 !important;
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 1.6rem;
+    padding: .76vh 6vh;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+  .btn-branch:active, .btn-branch:hover, .btn-alert:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  .branch-map {
+    min-height: 40vh;
+  }
+ 
+}
+
+@media (min-width: 1600px) { 
+  .gap-lg-6 {
+    gap: auto !important;
+  }
+
+  /* Banner background */
+  .hero-banner-bg {
+    overflow: hidden;
+  }
+  .hero-banner-bg > img { /* Image tilted 1.64dg */
+    width: 100vw;
+    height: fit-content !important;
+    transform: rotate(1.64deg);
+    transform: translate(-50%, -15%);
+    margin-left: 50%;
+  }
+
+}
